@@ -1,0 +1,21 @@
+.wrapper{
+    background-color: #181818;
+    height: 15vh;
+}
+
+a, span{
+    text-decoration: none !important;
+    color: #ffffff75 !important;
+    transition: 0.3s;
+}
+
+a:hover, span:hover{
+    color: #fff !important;
+}
+
+span{
+    font-size: small;
+}
+.link{
+    margin-left: 3vw !important;
+}

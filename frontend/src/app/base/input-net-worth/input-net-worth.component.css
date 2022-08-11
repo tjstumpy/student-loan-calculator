@@ -1,0 +1,23 @@
+#input{
+  height: 50vh;
+  width: 75vw;
+}
+    
+#header{
+  padding: 5px 0 0 5px;
+  margin: 0;
+  color: #ffffff75;
+}
+
+.title{
+  margin: 2vh 0 4vh 0;
+  font-size: 40px;
+}
+
+.wrapper{
+  height: 47vh;
+}
+
+.form-group{
+  margin-top: 4vh;
+}

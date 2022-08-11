@@ -1,0 +1,36 @@
+<div class="wrapper">
+
+    <!--section to choose baseline or create-->
+    <div class="d-flex justify-content-center align-items-center nav-btns-wrapper">
+        <button class="nav-btn" (click)="switchDisplay(0)" id="baseline">BASELINE</button>
+        <button class="nav-btn" (click)="switchDisplay(1)" id="create">CREATE</button>
+    </div>
+
+    <!--section for inputs-->
+    <div class="d-flex justify-content-center">
+        <app-input-student-loan [data]="baseline_data"></app-input-student-loan>
+    </div>
+    <div class="d-flex justify-content-center">
+        <!-- <app-input-net-worth [data]="baseline_data"></app-input-net-worth> -->
+    </div>
+
+    <!--submit/reset buttons and results header-->
+    <p class="w-100 text-center valid" *ngIf="!isValidInput">invalid input!</p>
+    <div class="d-flex justify-content-center align-items-center form-btns-wrapper">
+        <button type="button" class="btn btn-warning btn-lg submit" id="btn" (click)="submit()">SUBMIT</button>
+        <button type="button" class="btn btn-outline-warning btn-lg reset" id="btn" (click)="reset()">RESET</button>
+    </div>
+    <div class="d-flex justify-content-center">
+        <h2><span>RESULTS</span></h2>
+    </div>
+
+    <!--section for outputs-->
+    <div class="d-flex justify-content-center">
+        <div>
+            <app-output-payment [data]="resp"></app-output-payment>
+            <app-output-graph [data]="resp"></app-output-graph>
+        </div> 
+        <app-output-info [data]="resp"></app-output-info>
+    </div>
+
+</div>

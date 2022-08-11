@@ -1,0 +1,35 @@
+<div class="rounded shadow display-bubble" id="output-info">
+    <div class="h-25 wrapper">
+        <div class="d-flex m-0">
+            <p class="title">INVESTMENT GROWTH RANGE</p>
+            <button type="button" class="tip h-50" data-bs-toggle="tooltip" data-bs-placement="right" 
+                    title="Based on the min/max annual returns for the chosen index" disabled>?
+            </button>
+        </div>   
+        <p class="output" *ngIf="data.riskPercentageHigh != null; else elseBlock"><span class="low">{{data.riskPercentageLow}}</span>|<span class="high">{{data.riskPercentageHigh}}</span></p>
+        <ng-template #elseBlock><p class="output"><span class="low">0%</span>|<span class="high">0%</span></p></ng-template>
+    </div>
+    <div class="h-25 wrapper">
+        <div class="d-flex m-0">
+            <p class="title">SUGGESTED MINIMUM MONTHLY INVESTMENT</p>            
+            <button type="button" class="tip h-50" data-bs-toggle="tooltip" data-bs-placement="right" 
+                    title="This is the investment value we would expect to cancel out the interest on the student loan. If you are unable to invest this amount, we recommend looking into paying off your loan early." disabled>?
+            </button>
+        </div>
+        <p class="output">{{data.suggestedInvestmentAmount | currency:"USD":"symbol"}}</p>
+    </div>
+    <div class="h-25 wrapper">
+        <div class="d-flex m-0">
+            <p class="title">EXPECTED INVESTMENT RETURNS</p>
+            <button type="button" class="tip h-50" data-bs-toggle="tooltip" data-bs-placement="right" 
+                    title="Note that these values may be overestimates, as the market has performed well over the past 10 years due to a variety of factors" disabled>?
+            </button>
+        </div>
+        <p class="output">{{data.returnOnInvestment | currency:"USD":"symbol"}}</p>
+    </div>
+    <div class="h-25 wrapper">
+        <p class="title">PROJECTED NET WORTH</p>
+        <p class="output" *ngIf="data.yearlyNetWorthImpact.length > 1; else elseBlock2">{{data.yearlyNetWorthImpact[data.yearlyNetWorthImpact.length-1] | currency:"USD":"symbol"}}</p>
+        <ng-template #elseBlock2><p class="output">$0.00</p></ng-template>
+    </div>
+</div>

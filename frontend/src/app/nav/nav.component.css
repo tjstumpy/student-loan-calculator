@@ -1,0 +1,15 @@
+.bar{
+    background-color: #181818;
+    height: 10vh;
+    max-width: 100vw;
+}
+
+#git-link{
+    margin-left: 2vw;
+    color: #FDB515;
+}
+
+#settings{
+    margin-right: 2vw;
+    color: #FDB515;
+}

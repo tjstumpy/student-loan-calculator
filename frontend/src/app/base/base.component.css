@@ -1,0 +1,73 @@
+/*holds everything in base (is this even needed?)*/ 
+.wrapper{
+    margin-bottom: 5vh;
+}
+
+/*div that holds baseline and create btns*/
+.nav-btns-wrapper{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+/*styling for baseline and create btns*/
+.nav-btn{
+    background-color: transparent;
+    border-color: transparent;
+    color: #ffffff50;
+    transition: 0.3s !important;
+}
+
+.nav-btn:hover{
+    color: #fff !important;
+}
+
+/*div that holds submit and reset btns*/
+.form-btns-wrapper{
+    height: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+/*styling for RESET section divider*/
+h2{
+    width: 80vw;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin: 2vh 0 2vh;
+    line-height: 0.1em !important;
+}
+
+h2 span{
+    background: #212223;
+    padding: 0 10px 0 10px;
+}
+
+/*overriding bootstrap for submission btns*/
+#btn{
+    margin-right: 1vw;
+    transition: 0.3s;
+}
+
+.submit{
+    background-color: #FDB515 !important;
+    border-color: #FDB515 !important;
+}
+
+.submit:hover{
+    background-color: #FDB51525 !important;
+    color: #FDB515 !important;
+}
+
+.reset{
+    border-color: #FDB515 !important;
+}
+
+.reset:hover{
+    background-color: #FDB51525 !important;
+}
+
+.valid{
+    color: #FF6961;
+    margin: 1vh 0 1vh;
+}

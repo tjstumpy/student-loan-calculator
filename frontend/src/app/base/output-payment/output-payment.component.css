@@ -1,0 +1,14 @@
+#input{
+  height: 20vh;
+  width: 48vw;
+}
+
+.title{
+  font-size: 1vw;
+}
+
+.output{
+  font-size: 3.5vw;
+  color: #FDB515;
+}
+    

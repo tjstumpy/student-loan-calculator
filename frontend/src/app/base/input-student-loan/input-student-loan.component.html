@@ -1,0 +1,44 @@
+<div class="rounded shadow display-bubble mt-0" id="input">
+    <!-- <p id="header">STUDENT LOAN</p> -->
+    <div class="d-flex justify-content-center align-items-center wrapper">
+        <div class="form-group">
+            <label for="income">DISCRETIONARY INCOME</label>
+            <input type="number" class="form-control input-box" id="income" value="{{data.income}}" [(ngModel)]="data.income">
+        </div>
+        <div class="form-group">
+            <label for="loan-cost">STUDENT LOAN COST</label>
+            <input type="number" class="form-control input-box" id="loan-cost" value="{{data.loan_cost}}" [(ngModel)]="data.loan_cost">
+        </div>
+        <!-- <div class="form-group">
+            <label for="min-payment">MIN. PAYMENT</label>
+            <input type="number" class="form-control input-box" id="min-payment" value="{{data.min_payment}}" [(ngModel)]="data.min_payment">
+        </div> -->
+        <div class="form-group">
+            <label for="interest">INTEREST RATE</label>
+            <input type="number" class="form-control input-box" id="interest" value="{{data.interest}}" [(ngModel)]="data.interest">
+        </div>
+        <div class="form-group">
+            <label for="term">TERM</label>
+            <input type="number" class="form-control input-box" id="term" value="{{data.term}}" [(ngModel)]="data.term">
+        </div>
+        <div class="form-group">
+            <div class="d-flex m-0">
+                <label for="risk">RISK</label>
+                <button type="button" class="tip h-50" data-bs-toggle="tooltip" data-bs-placement="right" 
+                title="
+Conservative: Based on average annual return of the DJIA over the past 10 years
+
+Moderate: Based on average annual return of the S&P 500 over the past 10 years
+
+Aggressive: Based on average annual return of the NASDAQ 100 over the past 10 years" disabled>?
+            </button>
+            </div>
+           
+            <select class="custom-select rounded m-0 input-box" id="risk" value="{{data.risk}}" [(ngModel)]="data.risk">
+                <option value="conservative">Conservative</option>
+                <option value="moderate">Moderate</option>
+                <option value="aggressive">Aggressive</option> 
+            </select>
+        </div>
+    </div>
+</div>

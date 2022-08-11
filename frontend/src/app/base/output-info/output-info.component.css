@@ -1,0 +1,34 @@
+#output-info{
+    height: 68vh;
+    width: 24vw;
+}
+
+.wrapper{
+    padding: 1vw 0 0 1vw;
+}
+
+.title{
+    font-size: 1vw;
+}
+  
+.output{
+    font-size: 3.5vw;
+    color: #FDB515;
+}
+
+.low{
+    color: #FF6961;
+}
+
+.high{
+    color: #77DD77;
+}
+
+.tip{
+    background-color: #212223;
+    color: white;
+    border: 0;
+    font-size: small;
+    border-radius: 50%;
+    margin-top: -10px;
+  }

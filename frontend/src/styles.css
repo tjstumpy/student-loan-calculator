@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*COLORS
+light grey: D8DCDB
+dark blue: 005F9E
+teal: 00818F
+*/
+
+html{
+    background-color: #212223;
+    color: white;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.display-bubble{
+    background-color: #181818;
+    margin-top: 3vh;
+    animation: fadeInAnimation 1.75s;
+}
+
+.input-box{
+    width: 10vw !important;
+    height: 4vh !important;
+    background-color: #ffffff05 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    margin-right: 2vw !important;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
